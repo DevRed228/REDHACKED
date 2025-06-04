@@ -19,7 +19,8 @@ header .nav {
     border-radius: 25px;
 }
 
-header .nav .logo p a {
+header .nav .logo p a span img{
+    width: 50px;
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-weight: bold;
@@ -77,7 +78,7 @@ header {
     padding-top: 20px;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.904)),url(ressources/pexels-sebastiaan9977-1480690.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.904)),url(ressources/pexels-sebastiaan9977-1480690.jpg); */
     background-size: cover;
     background-position: center;
 }
@@ -382,4 +383,24 @@ header .banner3 {
     background: red;
     color: white;
     cursor: pointer;
+}
+
+.nav .menu-hamburger {
+    display: none;
+    position:absolute;
+    top: 9px;
+    right: -40px;
+    bottom: 0;
+    width: 35px;
+}
+/* Responsive */
+
+
+@media screen and (max-width: 1147px) {
+    .nav .menu-hamburger {
+        display: block;
+    }
+    header .nav .navigateur ,header .nav .boutton {
+        display: none;
+    }
 }
