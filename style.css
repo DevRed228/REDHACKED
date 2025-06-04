@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    background: black;
+}
 
 header .nav {
     padding: 10px 20px;
@@ -12,7 +15,7 @@ header .nav {
     align-items: center;
     justify-content: space-between;
     color: black;
-    background-color: rgba(68, 65, 65, 0.466);
+    background-color: rgba(48, 46, 46, 0.466);
     background-attachment: fixed;
     border-radius: 25px;
 }
@@ -67,6 +70,7 @@ header .nav .boutton a button:hover {
     border-color: white;
     color: white;
     cursor: pointer;
+    font-size: 20px;
     transition: 0.5s;
 }
 
@@ -74,18 +78,16 @@ header {
     padding-top: 20px;
     width: 100%;
     height: 100vh;
-    background: black;
+    
     background-size: cover;
     background-position: center;
 }
 
 header .banner {
-    width: 100%;
-    /* padding-top: 250px; */
+
+    padding-top: 200px;
     height: 90%;
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: left;
@@ -101,14 +103,184 @@ header .banner p span.profil {
     color: red;
 }
 header .banner1 {
-    width: 100%;
-    /* padding-top: 250px; */
-    height: 20%;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    color: rgb(255, 0, 0);
     font-size: 30px;
-    text-align: left;
-    padding-left: 50px;
+    margin-top: 02%;
 }
+header .banner2 {
+    margin-top: 05%;
+    margin-left: 28%;
+}
+header .banner1 p {
+    color: red;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+
+header .banner1 .contact {
+    color: aliceblue;
+    /* font-weight: bolder; */
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+header .banner1 .contact a {
+    padding: 10px 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.753);
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0,5s;
+}
+
+header .banner1 .contact a:hover {
+    cursor: pointer;
+    background-color: rgba(65, 65, 65, 0.74);
+    border:1px bold aliceblue;
+    font-size: 31px;
+    transition: 0,5s;
+}
+
+header .banner1 .serv {
+    margin-top: 7%;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header .banner1 .serv div {
+    background-color: rgba(65, 65, 65, 0.74);
+    padding: 30px 10px;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    transition: 0,8s;
+}
+header .banner1 .serv div:hover {
+    font-weight: lighter;
+    background-size: cover;
+    transition: 0,8s;
+}
+
+header .banner1 .serv div .titre {
+    color: rgba(255, 0, 0, 0.753);
+    font-size: 25px;
+    font-weight: 700;
+}
+header .banner1 .serv div span {
+    font-size: 15px;
+    color: rgb(207, 207, 207);
+}
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.form-container {
+  width: 600px;
+  background: linear-gradient(#000000, #000000) padding-box,
+              linear-gradient(145deg, transparent 30%,#ff1c1c, #000000) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 20px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* box-sizing: border-box; */
+  border-radius: 25px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #ffffffee;
+  border-color: #fff;
+  color: #ff0000;
+}
+
+
+
+
