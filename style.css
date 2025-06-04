@@ -4,9 +4,8 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-    background: black;
-}
+
+
 
 header .nav {
     padding: 10px 20px;
@@ -21,10 +20,10 @@ header .nav {
 }
 
 header .nav .logo p a {
-    color: red;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 header .nav .navigateur {
@@ -41,7 +40,7 @@ header .nav .navigateur a {
 }
 
 header .nav .navigateur a:hover {
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: larger;
     transition: 0.5s;
 }
@@ -78,7 +77,7 @@ header {
     padding-top: 20px;
     width: 100%;
     height: 100vh;
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.904)),url(ressources/pexels-sebastiaan9977-1480690.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -88,38 +87,49 @@ header .banner {
     padding-top: 200px;
     height: 90%;
     display: flex;
-    color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: left;
     padding-left: 50px;
 }
+
 header .banner p span {
     font-size: 50px;
     color: rgb(255, 255, 255);
     font-weight: bolder;
     text-align: left;
 }
+
 header .banner p span.profil {
-    color: red;
+    color: rgba(255, 0, 0, 0.822);
 }
+
 header .banner1 {
-    font-size: 30px;
-    margin-top: 02%;
+    font-size: 20px;
+    margin-top: 03%;
 }
+
 header .banner2 {
     margin-top: 05%;
     margin-left: 28%;
 }
+
+
+
 header .banner1 p {
-    color: red;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
-    padding-left: 15px;
+    padding-left: 50px;
+    display: flex;
+    /* justify-content: center; */
+    font-size: x-large;
 }
 
 header .banner1 .contact {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     /* font-weight: bolder; */
     text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 
 }
@@ -129,29 +139,30 @@ header .banner1 .contact a {
     border-radius: 25px;
     background-color: rgba(255, 0, 0, 0.753);
     text-decoration: none;
-    color: aliceblue;
-    transition: 0,5s;
+    color: rgb(255, 255, 255);
+    transition: 0,8s;
 }
 
 header .banner1 .contact a:hover {
     cursor: pointer;
-    background-color: rgba(65, 65, 65, 0.74);
-    border:1px bold aliceblue;
-    font-size: 31px;
-    transition: 0,5s;
+    background-color: rgba(48, 46, 46, 0.466);
+    border: 1px bold aliceblue;
+    font-size: 22px;
+    transition: 0,8s;
 }
 
 header .banner1 .serv {
-    margin-top: 7%;
+    margin-top: 5%;
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
+
 header .banner1 .serv div {
-    background-color: rgba(65, 65, 65, 0.74);
+    background-color: rgba(48, 46, 46, 0.466);
     padding: 30px 10px;
     border-radius: 25px;
     display: flex;
@@ -159,128 +170,216 @@ header .banner1 .serv div {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    transition: 0,8s;
+    transition: 0, 8s;
 }
+
 header .banner1 .serv div:hover {
-    font-weight: lighter;
     background-size: cover;
-    transition: 0,8s;
+    transition: 0, 8s;
 }
 
 header .banner1 .serv div .titre {
-    color: rgba(255, 0, 0, 0.753);
+    color: rgb(255, 0, 0);
     font-size: 25px;
     font-weight: 700;
 }
+
 header .banner1 .serv div span {
-    font-size: 15px;
-    color: rgb(207, 207, 207);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
 }
 
 
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 .form-container {
-  width: 600px;
-  background: linear-gradient(#000000, #000000) padding-box,
-              linear-gradient(145deg, transparent 30%,#ff1c1c, #000000) border-box;
-  border: 2px solid transparent;
-  padding: 32px 24px;
-  font-size: 20px;
-  font-family: inherit;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  /* box-sizing: border-box; */
-  border-radius: 25px;
+    width: 600px;
+    background: linear-gradient(#000000, #000000) padding-box,
+        linear-gradient(145deg, transparent 40%, #ff0000, #000000) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 15px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* box-sizing: border-box; */
+    border-radius: 25px;
 }
 
 .form-container button:active {
-  scale: 0.95;
+    scale: 0.95;
 }
 
 .form-container .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-container .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .form-container .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .form-container .form-group input {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  color: #fff;
-  font-family: inherit;
-  background-color: transparent;
-  border: 1px solid #414141;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
 }
 
 .form-container .form-group textarea {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  resize: none;
-  color: #fff;
-  height: 96px;
-  border: 1px solid #414141;
-  background-color: transparent;
-  font-family: inherit;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
 }
 
 .form-container .form-group input::placeholder {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .form-container .form-group input:focus {
-  outline: none;
-  border-color: #ff0000;
+    outline: none;
+    border-color: #ff0000;
 }
 
 .form-container .form-group textarea:focus {
-  outline: none;
-  border-color: #ff0000;
+    outline: none;
+    border-color: #ff0000;
 }
 
 .form-container .form-submit-btn {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: flex-start;
-  font-family: inherit;
-  color: #717171;
-  font-weight: 600;
-  width: 40%;
-  background: #313131;
-  border: 1px solid #414141;
-  padding: 12px 16px;
-  font-size: inherit;
-  gap: 8px;
-  margin-top: 8px;
-  cursor: pointer;
-  border-radius: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .form-container .form-submit-btn:hover {
-  background-color: #ffffffee;
-  border-color: #fff;
-  color: #ff0000;
+    background-color: #ffffffee;
+    border-color: #fff;
+    color: #ff0000;
 }
 
 
 
+/* From Uiverse.io by lowa2006 */
+header .banner3 {
+    margin-top: 01%;
+    margin-left: 28%;
+}
 
+.card {
+    width: 550px;
+    height: 520px;
+    background: #171717a4;
+    transition: 1s ease-in-out;
+    clip-path: polygon(50px 0%,
+            100% 0,
+            100% calc(100% - 30px),
+            calc(100% - 30px) 100%,
+            0 100%,
+            0% 50px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.card span {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+}
+
+.card .img {
+    margin-top: 10px;
+    width: 10em;
+    height: 10em;
+    background: url(ressources/4c42218fdbbd6180d889982e1bb0c442.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: auto;
+    
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease-in-out;
+}
+
+.card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
