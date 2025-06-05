@@ -16,58 +16,74 @@
 </head>
 
 <body>
-    <header>
+    <header class="contact">
         <div class="nav" data-aos="zoom-in-down" data-aos-duration="2500">
-            <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
-                <p>
-                    <a href="index.html">
-                        <span><img src="ressources/Monlogo.png" alt=""></span>
+            <div class="navbar">
+                <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <p>
+                        <a href="index.html">
+                            <span><img src="ressources/Monlogo.png" alt=""></span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="navigateur">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Mes services</a>
+                    <a href="Apropos.html">A propos</a>
+                    <a href="contact.html">Contacts</a>
+                    <a href="https://github.com/">
+                        <button>
+                            <p>Github</p>
+                        </button>
                     </a>
-                </p>
+                    <a href="Coloré Dégradé CV Français Professionnel Simple.pdf">
+                        <button>
+                            <p>Mon CV</p>
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <img src="ressources/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+                </div>
             </div>
 
-            <div class="navigateur">
-                <a href="index.html">Home</a>
-                <a href="services.html">Mes services</a>
-                <a href="Apropos.html">A propos</a>
-                <a href="contact.html">Contacts</a>
-            </div>
-            <div class="boutton" data-aos="zoom-out-up" data-aos-duration="2500">
-                <a href="https://github.com/">
-                    <button>
-                        <p>Github</p>
-                    </button>
-                </a>
-                <a href="Coloré Dégradé CV Français Professionnel Simple.pdf">
-                    <button>
-                        <p>Mon CV</p>
-                    </button>
-                </a>
-            </div>
 
-        </div>
-        <div class="banner2" data-aos="zoom-in-down" data-aos-duration="2500">
-            <div class="img">
-                <img src="">
-            </div>
-            <!-- From Uiverse.io by gharsh11032000 -->
-            <div class="form-container">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="email">Company Email</label>
-                        <input type="text" id="email" name="email" required="">
+            <div class="banner2" data-aos="zoom-in-down" data-aos-duration="2500">
+                <!-- From Uiverse.io by gharsh11032000 -->
+                <div class="form-container">
+                    <div class="titre">
+                        <p>
+                            Nous contactez
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="textarea">How Can We Help You?</label>
-                        <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
-                    </div>
-                    <button class="form-submit-btn" href="mailto:radossehanyron@gmail.com" type="submit">Submit</button>
-                </form>
-            </div>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="email">Company Email</label>
+                            <input type="text" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">How Can We Help You?</label>
+                            <textarea name="textarea" id="textarea" rows="10" cols="50"
+                                required="">          </textarea>
+                        </div>
+                        <button class="form-submit-btn" href="mailto:radossehanyron@gmail.com"
+                            type="submit">Submit</button>
+                    </form>
+                </div>
 
+            </div>
         </div>
     </header>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".navigateur")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
     <script>
         AOS.init();
     </script>

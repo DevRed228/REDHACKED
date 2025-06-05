@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" href="ressources/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="ressources/favicon/favicon.svg" />
     <link rel="shortcut icon" href="ressources/favicon/favicon.ico" />
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png" /> -->
-    <!-- <meta name="apple-mobile-web-app-title" content="MyWebSite" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="ressources/favicon/site.webmanifest" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -18,47 +18,62 @@
 <body>
     <header>
         <div class="nav" data-aos="zoom-in-down" data-aos-duration="2500">
-            <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
+            <div class="navbar">
+                <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <p>
+                        <a href="index.html">
+                            <span>
+                                <img src="ressources/Monlogo.png" alt="">
+                            </span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="navigateur">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Mes services</a>
+                    <a href="Apropos.html">A propos</a>
+                    <a href="contact.html">Contacts</a>
+                    <a href="https://github.com/">
+                        <button>
+                            <p>Github</p>
+                        </button>
+                    </a>
+                    <a href="Coloré Dégradé CV Français Professionnel Simple.pdf">
+                        <button>
+                            <p>Mon CV</p>
+                        </button>
+                    </a>
+                </div>
+                <!-- <div class="boutton" data-aos="zoom-out-up" data-aos-duration="2500">
+            </div> -->
+                <div>
+                    <img src="ressources/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+                </div>
+
+            </div>
+            <div class="banner" data-aos="fade-up" data-aos-duration="2500">
                 <p>
-                    <a href="index.html">
-                        <span>
-                            <img src="ressources/Monlogo.png" alt="">
-                        </span>
+                    <span>Je suis Raphael DOSSEH</span> <br>
+                    <span class="profil"> Pentester Professionnel</span>
+                </p>
+                <p class="contact">
+                    <a href="contact.html">
+                        Me Contacter 
                     </a>
                 </p>
             </div>
-
-            <div class="navigateur">
-                <a href="index.html">Home</a>
-                <a href="services.html">Mes services</a>
-                <a href="Apropos.html">A propos</a>
-                <a href="contact.html">Contacts</a>
-            </div>
-            <div class="boutton" data-aos="zoom-out-up" data-aos-duration="2500">
-                <a href="https://github.com/">
-                    <button>
-                        <p>Github</p>
-                    </button>
-                </a>
-                <a href="Coloré Dégradé CV Français Professionnel Simple.pdf">
-                    <button>
-                        <p>Mon CV</p>
-                    </button>
-                </a>
-            </div>
-            <div>
-                <img src="ressources/pngegg.png" alt="menu-hamburger" class="menu-hamburger">
-            </div>
-
-        </div>
-        <div class="banner" data-aos="fade-up" data-aos-duration="2500">
-            <p>
-                <span>Je suis Raphael DOSSEH</span> <br>
-                <span class="profil"> Pentester Professionnel</span>
-            </p>
         </div>
     </header>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".navigateur")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
     <script>
         AOS.init();
     </script>

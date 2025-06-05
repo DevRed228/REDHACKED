@@ -1,38 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 
 
-header .nav {
-    padding: 10px 20px;
-    margin: 0px 40px;
+header .nav .navbar {
+    padding: 10px 30px;
+    margin: 0px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: black;
     background-color: rgba(48, 46, 46, 0.466);
-    background-attachment: fixed;
     border-radius: 25px;
 }
 
-header .nav .logo p a span img{
-    width: 50px;
+header .nav .navbar .logo p a span img {
+    width: 120px;
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
 }
 
-header .nav .navigateur {
+header .nav .navbar .navigateur {
     gap: 50px;
     display: flex;
 }
 
-header .nav .navigateur a {
+header .nav .navbar .navigateur a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: large;
@@ -40,22 +41,24 @@ header .nav .navigateur a {
 
 }
 
-header .nav .navigateur a:hover {
+header .nav .navbar .navigateur a:hover {
     color: rgb(255, 0, 0);
     font-size: larger;
     transition: 0.5s;
 }
 
-header .nav .boutton {
+header .nav .navbar .navigateur {
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-header .nav .boutton a {
+header .nav .navbar .navigateur a {
     text-decoration: none;
 }
 
-header .nav .boutton a button {
+header .nav .navbar .navigateur a button {
     padding: 05px 20px;
     background-color: rgba(0, 0, 0, 0.144);
     font-size: large;
@@ -65,7 +68,7 @@ header .nav .boutton a button {
     transition: 0.5s;
 }
 
-header .nav .boutton a button:hover {
+header .nav .navbar .navigateur a button:hover {
     background-color: rgb(0, 0, 0);
     border-color: white;
     color: white;
@@ -77,17 +80,19 @@ header .nav .boutton a button:hover {
 header {
     padding-top: 20px;
     width: 100%;
-    height: 100vh;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.904)),url(ressources/pexels-sebastiaan9977-1480690.jpg); */
+    height: 99.99vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.904)), url(ressources/pexels-sebastiaan9977-1480690.jpg);
     background-size: cover;
     background-position: center;
 }
+
 
 header .banner {
 
     padding-top: 200px;
     height: 90%;
     display: flex;
+    flex-direction: column;
     font-size: 30px;
     text-align: left;
     padding-left: 50px;
@@ -104,6 +109,14 @@ header .banner p span.profil {
     color: rgba(255, 0, 0, 0.822);
 }
 
+header .banner p.contact {
+    color: rgb(255, 255, 255);
+    /* font-weight: bolder; */
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 10px;
+}
+
 header .banner1 {
     font-size: 20px;
     margin-top: 03%;
@@ -114,24 +127,39 @@ header .banner2 {
     margin-left: 28%;
 }
 
+header .banner p.contact a {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
 
+header .banner p.contact a:hover {
+    font-weight: 700;
+    transition: 0.5s;
+    background-color: #ffffff;
+    border: 1px bold #ff0000;
+    color: #ff0000;
 
-header .banner1 p {
+}
+
+header .banner1 p.att {
     color: rgb(255, 255, 255);
     font-weight: bolder;
-    padding-left: 50px;
+    padding-left: 4%;
     display: flex;
     /* justify-content: center; */
-    font-size: x-large;
+    font-size: 40px;
 }
 
 header .banner1 .contact {
     color: rgb(255, 255, 255);
     /* font-weight: bolder; */
-    text-align: center;
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    justify-content: space-around;
+    margin-top: 10px;
 
 }
 
@@ -141,7 +169,7 @@ header .banner1 .contact a {
     background-color: rgba(255, 0, 0, 0.753);
     text-decoration: none;
     color: rgb(255, 255, 255);
-    transition: 0,8s;
+    transition: 0, 8s;
 }
 
 header .banner1 .contact a:hover {
@@ -149,7 +177,7 @@ header .banner1 .contact a:hover {
     background-color: rgba(48, 46, 46, 0.466);
     border: 1px bold aliceblue;
     font-size: 22px;
-    transition: 0,8s;
+    transition: 0, 8s;
 }
 
 header .banner1 .serv {
@@ -193,19 +221,26 @@ header .banner1 .serv div span {
 
 
 /* From Uiverse.io by gharsh11032000 */
+.banner2 .titre p {
+    color: #ff0000;
+    margin: 10px 10px;
+    font-size: 30PX;
+    font-weight: 800;
+}
+
 .form-container {
     width: 600px;
     background: linear-gradient(#000000, #000000) padding-box,
         linear-gradient(145deg, transparent 40%, #ff0000, #000000) border-box;
     border: 2px solid transparent;
     padding: 32px 24px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: inherit;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     border-radius: 25px;
 }
 
@@ -302,7 +337,7 @@ header .banner3 {
     margin-left: 28%;
 }
 
-.card {
+header .banner3 .card {
     width: 550px;
     height: 520px;
     background: #171717a4;
@@ -320,7 +355,7 @@ header .banner3 {
     font-size: 25px;
 }
 
-.card span {
+header .banner3 .card span {
     font-weight: bold;
     color: rgb(255, 0, 0);
     text-align: center;
@@ -328,7 +363,7 @@ header .banner3 {
     font-size: 20px;
 }
 
-.card .info {
+header .banner3 .card .info {
     font-weight: 400;
     color: white;
     display: block;
@@ -337,7 +372,7 @@ header .banner3 {
     margin: 1em;
 }
 
-.card .img {
+header .banner3 .card .img {
     margin-top: 10px;
     width: 10em;
     height: 10em;
@@ -347,10 +382,10 @@ header .banner3 {
     background-repeat: no-repeat;
     border-radius: 15px;
     margin: auto;
-    
+
 }
 
-.card .share {
+header .banner3 .card .share {
     margin-top: 1em;
     display: flex;
     justify-content: center;
@@ -358,16 +393,16 @@ header .banner3 {
     margin-bottom: 15px;
 }
 
-.card a {
+header .banner3 .card a {
     color: white;
     transition: 0.4s ease-in-out;
 }
 
-.card a:hover {
+header .banner3 .card a:hover {
     color: red;
 }
 
-.card button {
+header .banner3 .card button {
     padding: 0.8em 1.7em;
     display: block;
     margin: auto;
@@ -379,28 +414,187 @@ header .banner3 {
     transition: 0.4s ease-in-out;
 }
 
-.card button:hover {
+header .banner3 .card button:hover {
     background: red;
     color: white;
     cursor: pointer;
 }
 
-.nav .menu-hamburger {
+
+.nav .navbar .menu-hamburger {
     display: none;
-    position:absolute;
-    top: 9px;
-    right: -40px;
-    bottom: 0;
-    width: 35px;
 }
+
+
 /* Responsive */
 
 
 @media screen and (max-width: 1147px) {
-    .nav .menu-hamburger {
+    .nav .navbar .menu-hamburger {
         display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        bottom: 0;
+        width: 30px;
     }
-    header .nav .navigateur ,header .nav .boutton {
-        display: none;
+
+    header {
+        max-height: 200vh;
+        padding-top: 0px;
+        margin: 0px;
     }
+
+    header .banner {
+        padding-top: 200px;
+        display: flex;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    header .banner p span {
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+
+    header .banner p span.profil {
+        font-size: 30px;
+        color: rgba(255, 0, 0, 0.822);
+    }
+
+    header .banner p span.acc {
+        font-size: 20px;
+        text-align: center;
+        color: rgba(255, 0, 0, 0.822);
+    }
+
+    header .banner p.contact{
+        margin-left: auto;
+        margin-right: auto;
+    }
+     header .banner p.contact a {
+        background-color: #ff0000;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 50px;
+        text-align: center;
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+
+    header .banner p.contact a:hover {
+        font-weight: 700;
+        transition: 0.5s;
+        background-color: #ffffff;
+        border: 1px bold #ff0000;
+        color: #ff0000;
+
+    }
+
+    header.serv {
+        height: 175vh;
+    }
+
+    header.contact {
+        height: 90vh;
+    }
+
+    header .nav .navbar {
+        padding-top: 60px;
+        margin: 0px;
+    }
+
+    header .nav .logo {
+        position: absolute;
+        top: 15px;
+    }
+
+    header .nav .navbar .navigateur a {
+        margin: 1px 0;
+        color: #ffffff;
+        font-size: larger;
+    }
+
+    header .nav .navbar .navigateur {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        gap: 25px;
+        margin-left: -100%;
+        backdrop-filter: blur(8px);
+        align-items: top;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #0000002c;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s ease;
+    }
+
+    .menu-hamburger {
+        z-index: 1000;
+    }
+
+    header .nav .navbar .navigateur.mobile-menu {
+        margin-left: 0;
+    }
+
+    .banner1 .serv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner1 .contact p {
+        display: flex;
+        justify-content: right;
+        margin-top: 100px;
+    }
+
+    header .banner3 {
+        margin-top: 01%;
+        margin-left: 0%;
+    }
+
+    header .banner3 .card {
+        width: auto;
+        height: auto;
+        background: #171717a4;
+        transition: 1s ease-in-out;
+        clip-path: polygon(50px 0%,
+                100% 0,
+                100% calc(100% - 30px),
+                calc(100% - 30px) 100%,
+                0 100%,
+                0% 50px);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+    }
+
+    .form-container {
+        width: auto;
+        background: linear-gradient(#000000, #000000) padding-box,
+            linear-gradient(145deg, transparent 40%, #ff0000, #000000) border-box;
+        border: 2px solid transparent;
+        padding: 32px 24px;
+        font-size: 15px;
+        font-family: inherit;
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* box-sizing: border-box; */
+        border-radius: 25px;
+    }
+
+    header .banner2 {
+        margin-top: 0%;
+        margin-left: 0;
+    }
+
 }
