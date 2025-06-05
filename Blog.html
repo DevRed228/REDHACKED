@@ -10,64 +10,47 @@
     <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="ressources/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Redhacked</title>
+    <link rel="stylesheet" href="blog.css">
+    <title>Blogging</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="nav" data-aos="zoom-in-down" data-aos-duration="2500">
-            <div class="navbar">
+            <div class="navbar navblog">
                 <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
                     <p>
                         <a href="index.html">
                             <span>
-                                <img src="ressources/Monlogo.png" alt="">
+                                <!-- <img src="ressources/favicon/favicon-96x96.png" class="blogimg" alt=""> -->
+                                <i class="fa-solid fa-house"></i>
                             </span>
                         </a>
                     </p>
                 </div>
 
                 <div class="navigateur">
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Mes services</a>
-                    <a href="Apropos.html">A propos</a>
-                    <a href="contact.html">Contacts</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="https://github.com/">
-                        <button>
-                            <p>Github</p>
-                        </button>
-                    </a>
-                    <a href="Coloré Dégradé CV Français Professionnel Simple.pdf">
-                        <button>
-                            <p>Mon CV</p>
-                        </button>
-                    </a>
+                    <a href="blog.html" class="titreBlog">Blogging</a>
                 </div>
-                <!-- <div class="boutton" data-aos="zoom-out-up" data-aos-duration="2500">
-            </div> -->
                 <div>
                     <img src="ressources/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
                 </div>
 
             </div>
-            <div class="banner" data-aos="fade-up" data-aos-duration="2500">
-                <p>
-                    <span>Je suis Raphael DOSSEH</span> <br>
-                    <span class="profil"> Pentester Professionnel</span>
-                </p>
-                <p class="contact">
-                    <a href="contact.html">
-                        Me Contacter 
-                    </a>
-                </p>
-                <p class="contact">
-                    <a href="Blog.html">
-                        Blog 
-                    </a>
-                </p>
+            <div class="actualite">
+                <p class="actualite-title">Dernières nouvelles</p>
+                <div class="actualite-content">
+                    <p>Bienvenue sur mon blog ! Ici, je partage des articles passionnants sur la cybersécurité, les
+                        technologies et bien plus encore. Restez à jour avec les dernières tendances et astuces pour
+                        protéger vos données en ligne.</p>
+                    <p>Restez connecté pour découvrir des conseils pratiques, des analyses approfondies et des
+                        réflexions sur l'avenir de la sécurité numérique.</p>
+                </div>
             </div>
         </div>
     </header>
@@ -80,6 +63,9 @@
             navLinks.classList.toggle('mobile-menu')
         })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         AOS.init();
     </script>
