@@ -491,7 +491,7 @@ header .banner3 .card button:hover {
     }
 
     header .banner {
-        padding-top: 195px;
+        padding-top: 180px;
         display: flex;
         text-align: center;
         padding-left: 0px;
@@ -535,7 +535,7 @@ header .banner3 .card button:hover {
     }
 
     header.serv {
-        height: 175vh;
+        height: 180vh;
     }
 
     header .nav .navbar {
