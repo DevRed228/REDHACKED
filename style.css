@@ -485,7 +485,7 @@ header .banner3 .card button:hover {
 
 
     header {
-        max-height: 200vh;
+        height: 100%;
         padding-top: 0px;
         margin: 0px;
     }
@@ -536,10 +536,6 @@ header .banner3 .card button:hover {
 
     header.serv {
         height: 175vh;
-    }
-
-    header.contact {
-        height: 90vh;
     }
 
     header .nav .navbar {
@@ -627,21 +623,6 @@ header .banner3 .card button:hover {
         font-size: 25px;
     }
 
-    .form-container {
-        width: auto;
-        background: linear-gradient(#000000, #000000) padding-box,
-            linear-gradient(145deg, transparent 40%, #ff0000, #000000) border-box;
-        border: 2px solid transparent;
-        padding: 32px 24px;
-        font-size: 15px;
-        font-family: inherit;
-        color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        /* box-sizing: border-box; */
-        border-radius: 25px;
-    }
 
     header .banner2 {
         margin-top: 0%;
