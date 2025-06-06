@@ -135,18 +135,19 @@ header .banner {
     font-size: 35px;
 }
 .banner .right p {
-    font-size: 25px;
+    font-size: 28px;
     color: #9c9c9c;
 }
 
 header .banner p span {
-    font-size: 50px;
+    font-size: 65px;
     color: rgb(255, 255, 255);
     font-weight: bolder;
     text-align: left;
 }
 
 header .banner p span.profil {
+    font-size: 50px;
     color: rgba(255, 0, 0, 0.822);
 }
 
