@@ -485,13 +485,12 @@ header .banner3 .card button:hover {
 
 
     header {
-        height: 100%;
+        height: 100vh;
         padding-top: 0px;
         margin: 0px;
     }
 
     header .banner {
-        padding-top: 180px;
         display: flex;
         text-align: center;
         padding-left: 0px;
