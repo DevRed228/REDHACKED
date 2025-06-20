@@ -40,10 +40,12 @@ header .nav .navbar .navigateur .titreBlog {
     font-size: 40px;
     color: red;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 header .nav .navbar .navigateur .titreBlog:hover {
-    font-size: 50px;
+    font-size: 41px;
+    transition: 0.5s;
     color: rgb(255, 255, 255);
 }
 
@@ -101,7 +103,7 @@ header {
     padding-top: 20px;
     width: 100%;
     height: 112vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.904)), url(ressources/pexels-sebastiaan9977-1480690.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.904)), url(ressources/pexels-soumil-kumar-4325-735911.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -116,7 +118,7 @@ header .banner {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    padding:0px;
+    padding: 0px;
 }
 
 .banner .left {
@@ -130,10 +132,12 @@ header .banner {
 .banner .right {
     text-align: center;
 }
+
 .banner .right .ac {
     color: #ff0000;
     font-size: 35px;
 }
+
 .banner .right p {
     font-size: 26px;
     color: #9c9c9c;
@@ -158,14 +162,11 @@ header .banner p.contact {
     /* justify-content: space-around; */
     margin-top: 10px;
 }
+
 .right p {
     color: #ff0000;
 }
 
-header .banner1 {
-    font-size: 20px;
-    margin-top: 03%;
-}
 
 header .banner2 {
     margin-top: 05%;
@@ -187,9 +188,13 @@ header .banner p.contact a:hover {
     background-color: #ffffff;
     border: 1px bold #ff0000;
     color: #ff0000;
-
+    
 }
 
+header .banner1 {
+    font-size: 20px;
+    margin-top: 03%;
+}
 header .banner1 p.att {
     color: rgb(255, 255, 255);
     font-weight: bolder;
@@ -264,117 +269,79 @@ header .banner1 .serv div span {
 }
 
 
+/* commentaires blog */
 
-/* From Uiverse.io by gharsh11032000 */
-.banner2 .titre p {
-    color: #ff0000;
-    margin: 10px 10px;
-    font-size: 30PX;
-    font-weight: 800;
-}
-
-.form-container {
-    width: 600px;
-    background: linear-gradient(#000000, #000000) padding-box,
-        linear-gradient(145deg, transparent 40%, #ff0000, #000000) border-box;
-    border: 2px solid transparent;
-    padding: 32px 24px;
-    font-size: 20px;
-    font-family: inherit;
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    border-radius: 25px;
-}
-
-.form-container button:active {
-    scale: 0.95;
-}
-
-.form-container .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-container .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.form-container .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 12px;
-}
-
-.form-container .form-group input {
-    width: 100%;
-    padding: 12px 16px;
+.comments-section {
+    margin-top: 40px;
+    background: rgba(131, 131, 131, 0.46);
     border-radius: 8px;
-    color: #fff;
-    font-family: inherit;
-    background-color: transparent;
-    border: 1px solid #414141;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    max-width: auto;
 }
 
-.form-container .form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    resize: none;
-    color: #fff;
-    height: 96px;
-    border: 1px solid #414141;
-    background-color: transparent;
-    font-family: inherit;
+.comments-section h2 {
+    margin-bottom: 18px;
+    color: #333;
 }
 
-.form-container .form-group input::placeholder {
-    opacity: 0.5;
-}
-
-.form-container .form-group input:focus {
-    outline: none;
-    border-color: #ff0000;
-}
-
-.form-container .form-group textarea:focus {
-    outline: none;
-    border-color: #ff0000;
-}
-
-.form-container .form-submit-btn {
+.comment-form {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.comment-form button {
     align-self: flex-start;
-    font-family: inherit;
-    color: #717171;
-    font-weight: 600;
-    width: 40%;
-    background: #313131;
-    border: 1px solid #414141;
-    padding: 12px 16px;
-    font-size: inherit;
-    gap: 8px;
-    margin-top: 8px;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 18px;
     cursor: pointer;
-    border-radius: 6px;
+    transition: background 0.2s;
 }
 
-.form-container .form-submit-btn:hover {
-    background-color: #ffffffee;
-    border-color: #fff;
-    color: #ff0000;
+.comment-form button:hover {
+    background: rgb(179, 0, 0);
 }
 
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
 
+.comment {
+    background: rgb(212, 212, 212);
+    border-radius: 4px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.comment-author {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-right: 10px;
+}
+
+.comment-date {
+    color: #888;
+    font-size: 0.95em;
+}
+
+.comment p {
+    margin: 6px 0 0 0;
+}
 
 /* From Uiverse.io by lowa2006 */
 header .banner3 {
@@ -471,6 +438,169 @@ header .banner3 .card button:hover {
 }
 
 
+
+/* Blog parts */
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.header {
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .nav .navbar .logo p a span {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+}
+
+p.actualite-title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.actualite {
+    background-color: #83838393;
+    border-radius: 25px;
+    padding: 0px;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articles {
+    background-color: #83838393;
+    border-radius: 25px;
+    /* padding: 10px; */
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actus {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+
+}
+
+.article .img img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.pagearticle {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200vh;
+}
+
+.pagearticle h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pagearticle p {
+    text-align: justify;
+    color: #7e7e7e;
+}
+
+.comments-section {
+    margin-top: 40px;
+    background: rgba(131, 131, 131, 0.46);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    max-width: auto;
+}
+
+.comments-section h2 {
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.comment-form button {
+    align-self: flex-start;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.comment-form button:hover {
+    background: rgb(179, 0, 0);
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.comment {
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.comment-author {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-right: 10px;
+}
+
+.comment-date {
+    color: #888;
+    font-size: 0.95em;
+}
+
+.comment p {
+    margin: 6px 0 0 0;
+}
+
+
+
 /* Responsive */
 
 
@@ -504,7 +634,7 @@ header .banner3 .card button:hover {
     }
 
     header .banner p span.profil {
-        font-size: 35px;
+        font-size: 31px;
         color: #ff0000d2;
     }
 
@@ -600,6 +730,7 @@ header .banner3 .card button:hover {
     .banner1 .contact {
         font-size: 30px;
     }
+
     header .banner3 {
         margin-top: 01%;
         margin-left: 0%;
@@ -629,4 +760,23 @@ header .banner3 .card button:hover {
         margin-left: 0;
     }
 
+    .actualite,
+    .articles {
+        /* width: 100%; */
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .actus {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }

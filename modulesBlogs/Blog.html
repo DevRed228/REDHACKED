@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="ressources/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="ressources/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="ressources/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="ressources/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" -->
+        <!-- integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Blogging</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav" data-aos="zoom-in-down" data-aos-duration="2500">
+            <div class="navbar navblog">
+                <div class="logo" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <p>
+                        <a href="/index.html">
+                            <span>
+                                <!-- <img src="ressources/favicon/favicon-96x96.png" class="blogimg" alt=""> -->
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="navigateur">
+                    <a href="blog.html" class="titreBlog">Blogging</a>
+                </div>
+                <!-- <div>
+                    <img src="ressources/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+                </div> -->
+
+            </div>
+            <div class="actualite">
+                <div class="img">
+                    <!-- <img src="ressources/Monlogo.png" alt="Blog Image"> -->
+                </div>
+                <p class="actualite-title" style=" color: rgb(255, 255, 255);font-weight: bold;">Dernières nouvelles</p>
+                <div class="actualite-content" style="color: rgba(255, 255, 255, 0.651);">
+                    <p>Bienvenue sur mon blog ! Ici, je partage des articles passionnants sur la cybersécurité, les
+                        technologies et bien plus encore. Restez à jour avec les dernières tendances et astuces pour
+                        protéger vos données en ligne.</p>
+                    <p>Restez connecté pour découvrir des conseils pratiques, des analyses approfondies et des
+                        réflexions sur l'avenir de la sécurité numérique.</p>
+                </div>
+            </div>
+            <div class="actus">
+                <div class="article">
+                    <h1>Article 1: Introduction à la cybersécurité</h1>
+                    <p>Dans cet article, nous explorerons les bases de la cybersécurité, y compris les menaces courantes,
+                        les meilleures pratiques pour protéger vos données et l'importance de la sensibilisation à la
+                        sécurité.</p>
+                    <a href="article1.html" class="read-more">Lire plus</a>
+                </div>
+            </div>
+            <div class="actus" style=" padding-bottom: 3%;">
+
+            </div>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".navigateur")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
